@@ -32,9 +32,21 @@ const userSchema = new mongoose.Schema(
             trim: true,
             default: ""
         },
-        banner: String,
-        location : String,
-        website: String
+        banner: {
+            type: String,
+            trim: true,
+            default: ""
+        },
+        location : {
+            type: String,
+            trim: true,
+            default: ""
+        },
+        website: {
+            type: String,
+            trim: true,
+            default: ""
+        }
     },{timestamps: true}
 );
 
