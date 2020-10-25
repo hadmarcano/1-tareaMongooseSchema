@@ -1,6 +1,7 @@
 // Generic import
 const express = require('express');
 const mongoose = require('mongoose');
+const expressValidator = require('express-validator');
 require('dotenv').config();
 
 
@@ -22,6 +23,11 @@ mongoose.connect(process.env.DATABASE,{
 .catch(error => console.log(error));
 
 // Middlewares
+
+app.use(expressValidator());
+
+// Routes Middlewares
+
 
 // App Listen
 
